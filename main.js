@@ -4,7 +4,15 @@ var outputTxt = document.querySelector(".output-txt");
 
 function clickEventHander() {
   console.log("clicked!");
-  outputTxt.value = "aaaa " + txtArea.value;
+  const inputValue = parseInt(txtArea.value, 10);
+
+  for (var i = 2; i < inputValue; i++) {
+    if (inputValue % i == 0) {
+      outputTxt.value = txtArea.value + " is not prime.";
+    } else {
+      outputTxt.value = txtArea.value + " is prime.";
+    }
+  }
 }
 
 translatebtn.addEventListener("click", clickEventHander);
