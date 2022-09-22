@@ -8,9 +8,9 @@ function clickEventHander() {
 
   for (var i = 2; i < inputValue; i++) {
     if (inputValue % i == 0) {
-      outputTxt.value = txtArea.value + " is not prime.";
+      outputTxt.innerText = txtArea.innerText + " is not prime.";
     } else {
-      outputTxt.value = txtArea.value + " is prime.";
+      outputTxt.innerText = txtArea.innerText + " is prime.";
     }
   }
 }
