@@ -8,7 +8,7 @@ function translatedURL(input) {
   return serverURL + "?" + "text=" + input;
 }
 
-function errorHandler() {
+function errorHandler(error) {
   console.log("error occured", error);
   alert("something went wrong please try after some time");
 }
